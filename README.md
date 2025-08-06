@@ -14,10 +14,10 @@ Aplicativo Android interno para registro e controle de entrada de caminhões bet
 ---
 
 ## 🎯 Funcionalidades principais
-- Seleção de modelos de betoneiras (Convicta, Liebherr, Siti)
+- Seleção de modelos de equipamentos
 - Marcação de peças danificadas ou para substituição
 - Geração e envio automático de relatórios ao setor comercial
-- Integração com o banco de dados corporativo (Korp)
+- Integração com o banco de dados corporativo (ERP)
 - Histórico de checklists realizados
 - Login por matrícula (usuário e senha ou QR Code)
 - Integração com módulo de propostas comerciais (em desenvolvimento)
@@ -31,8 +31,8 @@ Aplicativo Android interno para registro e controle de entrada de caminhões bet
 | Criar layout de login                      | ✔️ Concluído |
 | Login por QR Code                          | ✔️ Concluído |
 | Implementar autenticação via matrícula     | ✔️ Concluído |
-| Tela de seleção de modelo de betoneira     | ✔️ Concluído |
-| Tela de checklist por modelo               | ✔️ Concluído |
+| Tela de seleção por modelo de equipamento  | ✔️ Concluído |
+| Tela de checklist por itens                | ✔️ Concluído |
 | Geração de relatório para o comercial      | ✔️ Concluído |
 | Integração com banco SQL                   | ✔️ Concluído |
 | Integração com módulo "Propostas" do ERP   | ✔️ Concluído |
