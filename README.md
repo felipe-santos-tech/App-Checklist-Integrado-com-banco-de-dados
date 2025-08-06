@@ -1,27 +1,46 @@
-# App-Checklist-Integrado-com-banco-de-dados
-Aplicativo de checklist para gerenciar entrada e entrega de veículos/equipamentos. Faz pré-cadastro, integra com banco de dados e ERP em tempo real, sincronizando dados. Suporta assinaturas, fotos e comparação entre checklists de entrada e entrega, com interface intuitiva e validações por chassi.
+# 📱 Checklist de Betoneiras - App Android
 
+Aplicativo Android interno para registro e controle de entrada de caminhões betoneira em processo de reforma. Integrado com o ERP da empresa via banco de dados SQL Server.
 
-ChecklistApp
+---
 
-Aplicativo desenvolvido para gerenciar checklists de entrada e entrega de veículos ou equipamentos, com integração em tempo real a um banco de dados e sistema ERP. O app permite que o usuário realize o pré-cadastro de informações, que são imediatamente sincronizadas e refletidas no sistema, garantindo agilidade e precisão no controle de processos.
+## 🛠️ Tecnologias utilizadas
+- Java
+- Android Studio
+- SQL Server (SSMS)
+- Integração com ERP (Delphi/Pascal)
+- Firebase (planejado para login e notificações)
 
-Funcionalidades Principais:
+---
 
-Pré-cadastro: O usuário insere dados iniciais (como chassi, cliente e outros) que são salvos no banco de dados e usados como base para checklists de entrada e entrega.
+## 🎯 Funcionalidades principais
+- Seleção de modelos de betoneiras (Convicta, Liebherr, Siti)
+- Marcação de peças danificadas ou para substituição
+- Geração e envio automático de relatórios ao setor comercial
+- Integração com o banco de dados corporativo (Korp)
+- Histórico de checklists realizados
+- Login por matrícula (usuário e senha ou QR Code)
+- Integração com módulo de propostas comerciais (em desenvolvimento)
 
-Integração com ERP: O app se conecta ao sistema ERP, permitindo que as alterações no pré-cadastro e nos checklists sejam vistas em tempo real, mantendo a consistência com outros processos da empresa.
+---
 
-Checklist de Entrada e Entrega: Interface intuitiva para registrar itens, com validações de chassi e suporte a assinaturas e fotos, que são armazenadas no banco de dados.
+## ✅ Progresso do Projeto
 
-Atualizações em Tempo Real: Qualquer mudança no pré-cadastro ou nos checklists é sincronizada imediatamente com o banco de dados e o ERP, garantindo que o usuário e o sistema tenham sempre as informações mais recentes.
+| Tarefa                                      | Status       |
+|--------------------------------------------|--------------|
+| Criar layout de login                      | ✔️ Concluído |
+| Login por QR Code                          | ✔️ Concluído |
+| Implementar autenticação via matrícula     | ✔️ Concluído |
+| Tela de seleção de modelo de betoneira     | ✔️ Concluído |
+| Tela de checklist por modelo               | ✔️ Concluído |
+| Geração de relatório para o comercial      | ✔️ Concluído |
+| Integração com banco SQL                   | ✔️ Concluído |
+| Integração com módulo "Propostas" do ERP   | ✔️ Concluído |
+| Armazenar histórico de checklists          | ✔️ Concluído |
 
-Comparação de Checklists: Exibe diferenças entre entrada e entrega, facilitando o acompanhamento de mudanças nos itens registrados.
+---
 
-Tecnologias:
+## 📌 Observações
 
-Banco de dados relacional para armazenamento de pré-cadastros e checklists.
+Este projeto é voltado para uso interno, mas demonstra práticas reais de desenvolvimento mobile com foco em integração de sistemas legados e automação de processos operacionais.
 
-Conexão com sistema ERP para sincronização de dados.
-
-Interface mobile com layouts otimizados (ex.: RecyclerView) e suporte a dependências entre itens dos checklists.
