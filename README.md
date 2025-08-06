@@ -1,6 +1,6 @@
-# 📱 Checklist de Betoneiras - App Android
+# 📱 Checklist de Equipamentos - App Android
 
-Aplicativo Android interno para registro e controle de entrada de caminhões betoneira em processo de reforma. Integrado com o ERP da empresa via banco de dados SQL Server.
+Aplicativo Android interno para registro e controle de entrada de equipamentos em processo industriais. Integrado com o ERP da empresa via banco de dados SQL Server.
 
 ---
 
