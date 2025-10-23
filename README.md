@@ -1,36 +1,37 @@
-# Checklist de Equipamentos – App Android em Produção
+# Checklist de Betoneiras – App Android em Produção
 
-**Aplicativo corporativo em produção** para controle de entrada de equipamentos em processos industriais.  
-**Integrado ao ERP (Delphi/Pascal) via SQL Server** – usado diariamente em operações logísticas.
-
----
-
-## Objetivo do Projeto
-Automatizar o **registro de entrada de equipamentos**, eliminando planilhas manuais e gerando **relatórios em tempo real** para o setor comercial.
+**Aplicativo corporativo em uso diário** para controle de entrada de **caminhões betoneira em processo de reforma**.  
+**Integrado ao ERP via SQL Server** – elimina planilhas e gera relatórios em tempo real.
 
 ---
 
-## Tecnologias Utilizadas
+## Contexto Real
+- **Empresa**: Convicta  
+- **Uso**: Logística industrial  
+- **Impacto**: **+70% de agilidade** no processo de entrada/reforma  
+
+---
+
+## Tecnologias
 | Tecnologia         | Uso |
 |--------------------|-----|
-| **Java**           | Lógica do app |
+| **Java**           | Lógica principal |
 | **Android Studio** | IDE oficial |
-| **SQL Server**     | Banco corporativo (SSMS) |
+| **SQL Server**     | Banco corporativo |
 | **ERP (Delphi)**   | Integração legado |
-| **Retrofit**       | Chamadas REST |
-| **Room**           | Cache offline |
-| **Firebase**       | Login e notificações (em implementação) |
+| **JDBC**           | Comunicação direta com DB |
+| **Firebase**       | Login + notificações (em breve) |
 
 ---
 
 ## Funcionalidades em Produção
-- **Login seguro** por matrícula + QR Code  
-- **Seleção de modelo** de equipamento  
-- **Checklist visual** com marcação de danos  
-- **Geração automática de relatório** para o comercial  
-- **Integração direta com SQL Server**  
-- **Histórico completo** de checklists  
-- **Módulo de propostas comerciais** (ERP)  
+- **Login por matrícula + QR Code**  
+- **Seleção de modelo** de betoneira  
+- **Checklist visual** com danos  
+- **Relatório automático** para o comercial  
+- **Gravação direta no SQL Server**  
+- **Histórico completo** de reformas  
+- **Integração com módulo de propostas**  
 
 ---
 
@@ -39,14 +40,19 @@ Automatizar o **registro de entrada de equipamentos**, eliminando planilhas manu
 | Tarefa                                      | Status |
 |--------------------------------------------|--------|
 | Login (matrícula + QR Code)                | Concluído |
-| Seleção por modelo de equipamento          | Concluído |
+| Seleção por modelo                         | Concluído |
 | Checklist com itens danificados            | Concluído |
-| Relatório automático para comercial        | Concluído |
-| Integração com SQL Server (ERP)            | Concluído |
+| Relatório automático                       | Concluído |
+| Integração com SQL Server                  | Concluído |
 | Histórico de checklists                    | Concluído |
 | Módulo de propostas comerciais             | Concluído |
-| Firebase (login + notificações)            | Em andamento |
 
 ---
 
-## Arquitetura (Clean + MVVM)
+## Fluxo de Operação
+
+Operador → App Android → JDBC → SQL Server → ERP (Delphi)
+↓
+Relatório automático ao comercial
+
+## Projeto em produção – demonstra integração com sistemas legados, automação operacional e impacto real no negócio.
