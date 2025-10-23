@@ -1,46 +1,52 @@
-# 📱 Checklist de Equipamentos - App Android
+# Checklist de Equipamentos – App Android em Produção
 
-Aplicativo Android interno para registro e controle de entrada de equipamentos em processo industriais. Integrado com o ERP da empresa via banco de dados SQL Server.
-
----
-
-## 🛠️ Tecnologias utilizadas
-- Java
-- Android Studio
-- SQL Server (SSMS)
-- Integração com ERP (Delphi/Pascal)
-- Firebase (planejado para login e notificações)
+**Aplicativo corporativo em produção** para controle de entrada de equipamentos em processos industriais.  
+**Integrado ao ERP (Delphi/Pascal) via SQL Server** – usado diariamente em operações logísticas.
 
 ---
 
-## 🎯 Funcionalidades principais
-- Seleção de modelos de equipamentos
-- Marcação de peças danificadas ou para substituição
-- Geração e envio automático de relatórios ao setor comercial
-- Integração com o banco de dados corporativo (ERP)
-- Histórico de checklists realizados
-- Login por matrícula (usuário e senha ou QR Code)
-- Integração com módulo de propostas comerciais (em desenvolvimento)
+## Objetivo do Projeto
+Automatizar o **registro de entrada de equipamentos**, eliminando planilhas manuais e gerando **relatórios em tempo real** para o setor comercial.
 
 ---
 
-## ✅ Progresso do Projeto
-
-| Tarefa                                      | Status       |
-|--------------------------------------------|--------------|
-| Criar layout de login                      | ✔️ Concluído |
-| Login por QR Code                          | ✔️ Concluído |
-| Implementar autenticação via matrícula     | ✔️ Concluído |
-| Tela de seleção por modelo de equipamento  | ✔️ Concluído |
-| Tela de checklist por itens                | ✔️ Concluído |
-| Geração de relatório para o comercial      | ✔️ Concluído |
-| Integração com banco SQL                   | ✔️ Concluído |
-| Integração com módulo "Propostas" do ERP   | ✔️ Concluído |
-| Armazenar histórico de checklists          | ✔️ Concluído |
+## Tecnologias Utilizadas
+| Tecnologia         | Uso |
+|--------------------|-----|
+| **Java**           | Lógica do app |
+| **Android Studio** | IDE oficial |
+| **SQL Server**     | Banco corporativo (SSMS) |
+| **ERP (Delphi)**   | Integração legado |
+| **Retrofit**       | Chamadas REST |
+| **Room**           | Cache offline |
+| **Firebase**       | Login e notificações (em implementação) |
 
 ---
 
-## 📌 Observações
+## Funcionalidades em Produção
+- **Login seguro** por matrícula + QR Code  
+- **Seleção de modelo** de equipamento  
+- **Checklist visual** com marcação de danos  
+- **Geração automática de relatório** para o comercial  
+- **Integração direta com SQL Server**  
+- **Histórico completo** de checklists  
+- **Módulo de propostas comerciais** (ERP)  
 
-Este projeto é voltado para uso interno, mas demonstra práticas reais de desenvolvimento mobile com foco em integração de sistemas legados e automação de processos operacionais.
+---
 
+## Status do Projeto
+
+| Tarefa                                      | Status |
+|--------------------------------------------|--------|
+| Login (matrícula + QR Code)                | Concluído |
+| Seleção por modelo de equipamento          | Concluído |
+| Checklist com itens danificados            | Concluído |
+| Relatório automático para comercial        | Concluído |
+| Integração com SQL Server (ERP)            | Concluído |
+| Histórico de checklists                    | Concluído |
+| Módulo de propostas comerciais             | Concluído |
+| Firebase (login + notificações)            | Em andamento |
+
+---
+
+## Arquitetura (Clean + MVVM)
